@@ -25,14 +25,15 @@
                 <p class="review">"{{movie.review}}"</p>
                 <p class="overview">{{movie.description}} </p>
                 <a href="edit?id={{movie.id}}" class="button">Update</a>
-                <a href="#" class="button delete-button">Delete</a>
+                <a href="delete?id={{movie.id}}" class="button delete-button">
+                    Delete</a>
             </div>
         </div>
     </div>
     {% endfor %}
 </div>
 <div class="container text-center add">
-    <a href="#" class="button">Add Movie</a>
+    <a href="add" class="button">Add Movie</a>
 
 </div>
 
